@@ -576,6 +576,7 @@ button {
     font-family: "Circe";
   }
   .final-wrapper__text {
+    width: 315px;
     color: #f7f7f7;
     font-size: 20px;
     font-style: normal;
@@ -1468,6 +1469,7 @@ button {
     font-family: "Circe";
   }
   .final-wrapper__text {
+    width: 489px;
     color: #f7f7f7;
     font-size: 20px;
     font-style: normal;

@@ -27,6 +27,8 @@
     }
 
     &__text {
+      width: 489px;
+
       color: $text-color;
       font-size: 20px;
       font-style: normal;
@@ -61,22 +63,4 @@
       }
     }
   }
-
-  // .final-text-dissapear {
-  //   animation: finalTextAppear 2s ease forwards;
-
-  //   & > p:nth-child(5) {
-  //     animation: finalTextAppear 2.5s ease forwards;
-  //   }
-
-  //   @keyframes finalTextAppear {
-  //     from {
-  //       opacity: 0;
-  //       transform: translateY(20%);
-  //     }
-  //     to {
-  //       opacity: 1;
-  //     }
-  //   }
-  // }
 }
