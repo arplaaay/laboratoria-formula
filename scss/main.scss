@@ -1,0 +1,11 @@
+@import "./utils/variables";
+
+@import "./mobile/page-start-mobile";
+@import "./mobile/page-scroll-books-mobile";
+@import "./mobile/page-final-mobile";
+@import "./mobile/progressive-wheel-mobile";
+
+@import "./components/page-start";
+@import "./components/page-scroll-books";
+@import "./components/page-final";
+@import "./components/progressive-wheel";

@@ -1,0 +1,421 @@
+@media screen and (min-width: 1200px) {
+  .books-list {
+    position: relative;
+
+    height: 1935px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    &__item {
+      visibility: hidden;
+    }
+  }
+
+  .book-1-appear {
+    position: absolute;
+
+    animation: bookOneAppear forwards 2s;
+
+    @keyframes bookOneAppear {
+      0% {
+        top: 20%;
+        right: -30%;
+      }
+
+      1% {
+        visibility: unset;
+      }
+
+      50% {
+        top: -40px;
+        right: 415px;
+        visibility: unset;
+      }
+
+      100% {
+        top: 0;
+        right: 315px;
+        visibility: unset;
+      }
+    }
+  }
+
+  .book-1-dissapear {
+    position: absolute;
+
+    animation: bookOneDissapear forwards 2s;
+
+    visibility: hidden;
+
+    @keyframes bookOneDissapear {
+      0% {
+        top: 0;
+        right: 315px;
+        visibility: unset;
+      }
+
+      50% {
+        top: -40px;
+        right: 415px;
+        visibility: unset;
+      }
+
+      100% {
+        top: 20%;
+        right: -30%;
+      }
+    }
+  }
+
+  .book-2-appear {
+    position: absolute;
+
+    animation: bookTwoAppear forwards 2.5s;
+    animation-delay: 0.3s;
+
+    @keyframes bookTwoAppear {
+      0% {
+        top: 30%;
+        left: -30%;
+      }
+
+      1% {
+        visibility: unset;
+      }
+
+      50% {
+        top: 100px;
+        left: 120px;
+        visibility: unset;
+      }
+
+      100% {
+        top: 120px;
+        left: 80px;
+        visibility: unset;
+      }
+    }
+  }
+
+  .book-2-dissapear {
+    position: absolute;
+
+    animation: bookTwoDissapear forwards 2.5s;
+
+    @keyframes bookTwoDissapear {
+      0% {
+        top: 120px;
+        left: 80px;
+        visibility: unset;
+      }
+
+      50% {
+        top: 100px;
+        left: 120px;
+        visibility: unset;
+      }
+
+      100% {
+        top: 30%;
+        left: -30%;
+      }
+    }
+  }
+
+  .book-3-appear {
+    position: absolute;
+
+    animation: bookThreeAppear forwards 3s;
+
+    @keyframes bookThreeAppear {
+      0% {
+        top: 80%;
+      }
+
+      1% {
+        visibility: unset;
+      }
+
+      30% {
+        top: 1200px;
+        left: 450px;
+        visibility: unset;
+      }
+
+      60% {
+        top: 500px;
+        left: 220px;
+        visibility: unset;
+      }
+
+      100% {
+        top: 605px;
+        left: 320px;
+        visibility: unset;
+      }
+    }
+  }
+
+  .book-3-dissapear {
+    position: absolute;
+
+    animation: bookThreeDissapear forwards 3s;
+
+    @keyframes bookThreeDissapear {
+      0% {
+        top: 605px;
+        left: 320px;
+        visibility: unset;
+      }
+
+      30% {
+        top: 500px;
+        left: 220px;
+        visibility: unset;
+      }
+
+      60% {
+        top: 1200px;
+        left: 450px;
+        visibility: unset;
+      }
+
+      100% {
+        top: 80%;
+      }
+    }
+  }
+
+  .book-4-appear {
+    position: absolute;
+
+    animation: bookFourAppear forwards 3s;
+
+    @keyframes bookFourAppear {
+      0% {
+        top: 80%;
+      }
+
+      1% {
+        visibility: unset;
+      }
+
+      30% {
+        top: 1200px;
+        right: 450px;
+        visibility: unset;
+      }
+
+      60% {
+        top: 500px;
+        right: -20px;
+        visibility: unset;
+      }
+
+      100% {
+        top: 600px;
+        right: 80px;
+        visibility: unset;
+      }
+    }
+  }
+
+  .book-4-dissapear {
+    position: absolute;
+
+    animation: bookFourDissapear forwards 3s;
+
+    @keyframes bookFourDissapear {
+      0% {
+        top: 600px;
+        right: 80px;
+        visibility: unset;
+      }
+
+      30% {
+        top: 500px;
+        right: -20px;
+        visibility: unset;
+      }
+
+      60% {
+        top: 1200px;
+        right: 450px;
+        visibility: unset;
+      }
+
+      100% {
+        top: 80%;
+      }
+    }
+  }
+
+  .book-5-appear {
+    position: absolute;
+
+    animation: bookFiveAppear forwards 2.5s;
+
+    @keyframes bookFiveAppear {
+      0% {
+        top: 180%;
+        right: -30%;
+      }
+
+      1% {
+        visibility: unset;
+      }
+
+      50% {
+        top: 900px;
+        right: 460px;
+        visibility: unset;
+      }
+
+      100% {
+        top: 965px;
+        right: 440px;
+        visibility: unset;
+      }
+    }
+  }
+
+  .book-5-dissapear {
+    position: absolute;
+
+    animation: bookFiveDissapear forwards 2.5s;
+
+    @keyframes bookFiveDissapear {
+      0% {
+        top: 965px;
+        right: 440px;
+        visibility: unset;
+      }
+
+      50% {
+        top: 900px;
+        right: 460px;
+        visibility: unset;
+      }
+
+      100% {
+        top: 180%;
+        right: -30%;
+      }
+    }
+  }
+
+  .book-6-appear {
+    position: absolute;
+
+    animation: bookSixAppear forwards 3s;
+
+    @keyframes bookSixAppear {
+      0% {
+        bottom: 0;
+        left: -30%;
+      }
+
+      1% {
+        visibility: unset;
+      }
+
+      50% {
+        bottom: 340px;
+        left: 300px;
+        visibility: unset;
+      }
+
+      100% {
+        bottom: 240px;
+        left: 200px;
+        visibility: unset;
+      }
+    }
+  }
+
+  .book-6-dissapear {
+    position: absolute;
+
+    animation: bookSixDissapear forwards 2.5s;
+
+    @keyframes bookSixDissapear {
+      0% {
+        bottom: 240px;
+        left: 200px;
+        visibility: unset;
+      }
+
+      50% {
+        bottom: 340px;
+        left: 300px;
+        visibility: unset;
+      }
+
+      100% {
+        bottom: 0;
+        left: -30%;
+      }
+    }
+  }
+
+  .book-7-appear {
+    position: absolute;
+
+    animation: bookSevenAppear forwards 3s;
+
+    // bottom: 100px;
+    // right: 0;
+
+    @keyframes bookSevenAppear {
+      0% {
+        bottom: 200px;
+        right: -30%;
+      }
+
+      1% {
+        visibility: unset;
+      }
+
+      50% {
+        bottom: 100px;
+        right: 420px;
+        visibility: unset;
+      }
+
+      100% {
+        bottom: 0;
+        right: 320px;
+        visibility: unset;
+      }
+    }
+  }
+
+  .book-7-dissapear {
+    position: absolute;
+
+    animation: bookSevenDissapear forwards 3s;
+
+    @keyframes bookSevenDissapear {
+      0% {
+        bottom: 0;
+        right: 320px;
+        visibility: unset;
+      }
+
+      50% {
+        bottom: 100px;
+        right: 420px;
+        visibility: unset;
+      }
+
+      100% {
+        bottom: 200px;
+        right: -30%;
+      }
+    }
+  }
+}

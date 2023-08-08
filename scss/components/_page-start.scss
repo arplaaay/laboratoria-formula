@@ -1,0 +1,105 @@
+@media screen and (min-width: 1200px) {
+  .page-start-wrapper {
+    position: relative;
+    height: 768px;
+
+    z-index: 1;
+
+    pointer-events: none;
+  }
+
+  .logotype {
+    position: fixed;
+
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+
+    padding-top: 40px;
+  }
+
+  .logo-hide {
+    animation: logoHide 0.3s ease forwards;
+
+    @keyframes logoHide {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+  }
+
+  .logo-appear {
+    animation: logoAppear 0.3s ease forwards;
+
+    @keyframes logoAppear {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+
+  .main-hdr-wrapper {
+    position: fixed;
+
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .start-hdr {
+    margin-top: 293px;
+
+    color: $text-color;
+    text-align: center;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 80px;
+    letter-spacing: -1.6px;
+    text-transform: uppercase;
+    white-space: nowrap;
+
+    &__decor {
+      font-family: "Circe";
+    }
+
+    &__left-slide {
+      animation: slideLeft 1s ease forwards;
+      animation-delay: 0.5s;
+      opacity: 0;
+    }
+
+    @keyframes slideLeft {
+      from {
+        margin-left: -30%;
+      }
+
+      to {
+        margin-left: 0%;
+        opacity: 1;
+      }
+    }
+
+    &__right-slide {
+      animation: slideRight 1s ease forwards;
+      animation-delay: 1s;
+      opacity: 0;
+    }
+
+    @keyframes slideRight {
+      from {
+        margin-right: -30%;
+      }
+
+      to {
+        margin-right: 0%;
+        opacity: 1;
+      }
+    }
+  }
+}

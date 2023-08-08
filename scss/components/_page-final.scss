@@ -1,0 +1,82 @@
+@media screen and (min-width: 1200px) {
+  .page-final {
+    padding: 130px 0;
+  }
+
+  .final-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+
+    &__header {
+      color: $text-color;
+      text-align: center;
+      font-size: 80px;
+      font-style: normal;
+      font-weight: 100;
+      line-height: 80px;
+      letter-spacing: -1.6px;
+      text-transform: uppercase;
+      white-space: nowrap;
+
+      &-decor {
+        font-family: "Circe";
+      }
+    }
+
+    &__text {
+      color: $text-color;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 22px;
+    }
+
+    &__button {
+      cursor: pointer;
+
+      &-svg {
+        width: 289px;
+        height: 66px;
+      }
+    }
+  }
+
+  .final-text-appear {
+    animation: finalTextAppear 2s ease forwards;
+
+    & > p:nth-child(5) {
+      animation: finalTextAppear 2.5s ease forwards;
+    }
+
+    @keyframes finalTextAppear {
+      from {
+        opacity: 0;
+        transform: translateY(20%);
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  }
+
+  // .final-text-dissapear {
+  //   animation: finalTextAppear 2s ease forwards;
+
+  //   & > p:nth-child(5) {
+  //     animation: finalTextAppear 2.5s ease forwards;
+  //   }
+
+  //   @keyframes finalTextAppear {
+  //     from {
+  //       opacity: 0;
+  //       transform: translateY(20%);
+  //     }
+  //     to {
+  //       opacity: 1;
+  //     }
+  //   }
+  // }
+}

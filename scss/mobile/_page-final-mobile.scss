@@ -1,0 +1,60 @@
+@media screen and (max-width: 1199px) {
+  .page-final {
+    padding: 120px 0;
+  }
+
+  .final-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    &__header {
+      color: $extra-color;
+      font-size: 50px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 55px;
+      letter-spacing: -1px;
+      text-transform: uppercase;
+
+      &-decor {
+        font-family: "Circe";
+      }
+    }
+
+    &__text {
+      // width: 315px;
+      color: $text-color;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 22px;
+      white-space: normal;
+    }
+
+    &__button-svg {
+      width: 280px;
+      height: 66px;
+    }
+  }
+
+  .final-text-appear {
+    animation: finalTextAppear 2s ease forwards;
+
+    & > p:nth-child(5) {
+      animation: finalTextAppear 2.5s ease forwards;
+    }
+
+    @keyframes finalTextAppear {
+      from {
+        opacity: 0;
+        transform: translateY(20%);
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  }
+}

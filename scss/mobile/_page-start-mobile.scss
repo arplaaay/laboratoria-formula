@@ -1,0 +1,54 @@
+@media screen and (max-width: 1199px) {
+  .page-start-wrapper {
+    position: relative;
+    height: 665px;
+
+    z-index: 1;
+
+    pointer-events: none;
+  }
+
+  .logotype {
+    position: fixed;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+
+    padding-top: 30px;
+
+    &__logo-svg {
+      width: 56px;
+      height: 58px;
+    }
+
+    &__logo-text-svg {
+      width: 107px;
+      height: 38px;
+    }
+  }
+}
+
+.main-hdr-wrapper {
+  position: fixed;
+}
+
+.start-hdr {
+  margin-top: 215px;
+
+  color: $text-color;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 55px;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+
+  &__decor {
+    font-family: "Circe";
+  }
+}
