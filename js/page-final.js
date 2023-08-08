@@ -3,18 +3,10 @@ const hdrWrapperElem = document.querySelector(".main-hdr-wrapper");
 const pageFinalHdrElem = document.querySelector(".final-wrapper__header");
 const pageFinalWrapperTextElem = document.querySelector(".final-wrapper__text");
 
-console.log(wheelTextElem);
-
 const viewPortWidth = window.innerWidth;
 
-// pageFinalWrapperTextElem.children[0].style.color = "red";
-
-// hdrWrapperElem.style.visibility = "unset";
-
-const hadleStartHdrPosition = () => {
+export const handleFinal = () => {
   const hdrPosition = pageStartWrapperElem.getBoundingClientRect();
-
-  console.log(hdrPosition.top);
 
   if (viewPortWidth <= 1199) {
     if (hdrPosition.top > -2160) {
@@ -52,5 +44,3 @@ const hadleStartHdrPosition = () => {
     }
   }
 };
-
-document.addEventListener("scroll", hadleStartHdrPosition);

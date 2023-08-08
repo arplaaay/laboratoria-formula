@@ -2,10 +2,9 @@ const books = document.querySelectorAll(".books-list__item");
 const logoTextElement = document.querySelector(".logotype__logo-text");
 const wheelTextElem = document.querySelector(".wheel-text__svg");
 
-const wheelCircle = document.querySelector(".wheel-circle");
 const wheelFillElem = document.querySelector(".wheel-circle__fill-div");
 
-const handleScroll = () => {
+export const handleScroll = () => {
   const scrollYPostition = window.scrollY;
 
   // scroll progress wheel
@@ -78,5 +77,3 @@ const handleScroll = () => {
     books[6].classList.remove("book-7-appear");
   }
 };
-
-document.addEventListener("scroll", handleScroll);
