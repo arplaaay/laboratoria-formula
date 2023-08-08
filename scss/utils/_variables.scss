@@ -2,12 +2,19 @@ $bg-primary-color: #090909;
 $text-color: #f7f7f7;
 $extra-color: #ffffff;
 
+@media screen and (max-width: 1199px) {
+  body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
 
   @media screen and (max-width: 1199px) {
-    max-width: 1199px;
+    width: 365px;
 
     padding-left: 30px;
     padding-right: 30px;

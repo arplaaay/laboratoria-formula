@@ -1,10 +1,16 @@
+@media screen and (max-width: 1199px) {
+  body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+}
 .container {
   margin-left: auto;
   margin-right: auto;
 }
 @media screen and (max-width: 1199px) {
   .container {
-    max-width: 1199px;
+    width: 365px;
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -92,6 +98,7 @@ button {
 }
 
 .start-hdr {
+  width: 286px;
   margin-top: 215px;
   color: #f7f7f7;
   font-size: 50px;
@@ -741,6 +748,7 @@ button {
             transform: translateX(-50%);
   }
   .start-hdr {
+    width: 867px;
     margin-top: 293px;
     color: #f7f7f7;
     text-align: center;
